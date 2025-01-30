@@ -18,9 +18,9 @@ int main(){
     int digit3 = (number / 10) % 10;
     int digit4 = number % 10;
 
-    bool isOrdered = (digit1 > digit2) && (digit2 > digit3) && (digit3 > digit4);
+    bool is_ordered = (digit1 > digit2) && (digit2 > digit3) && (digit3 > digit4);
 
-    if (isOrdered) {
+    if (is_ordered) {
         std::cout << "Цифри числа "<< number <<" є впорядкованими за спаданням." << std::endl;
     } else {
         std::cout << "Цифри числа "<< number <<" не є впорядкованими за спаданням." << std::endl;

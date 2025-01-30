@@ -2,16 +2,15 @@
 
 #include <iostream>
 #include <cmath>
-using namespace std;
 
 int main() {
     int N;
     
-    cout << "Введіть значення N (> 0): ";
-    cin >> N;
+    std::cout << "Введіть значення N (> 0): ";
+    std::cin >> N;
 
     if (N <= 0) {
-        cout << "Помилка: N повинно бути більше 0." << endl;
+        std::cout << "Помилка: N повинно бути більше 0." << std::endl;
         return 1;
     }
 
@@ -22,7 +21,7 @@ int main() {
         sum += sign * pow(N - k + 1, 2);
     }
 
-    cout << "Сума: " << sum << endl;
+    std::cout << "Сума: " << sum << std::endl;
 
     return 0;
 }

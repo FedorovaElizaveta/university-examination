@@ -18,9 +18,9 @@ int main() {
     int digit3 = (number / 10) % 10;
     int digit4 = number % 10;
 
-    bool isEven = (digit1 % 2 == 0) && (digit2 % 2 == 0) && (digit3 % 2 == 0) && (digit4 % 2 == 0);
+    bool is_even = (digit1 % 2 == 0) && (digit2 % 2 == 0) && (digit3 % 2 == 0) && (digit4 % 2 == 0);
 
-    if (isEven) {
+    if (is_even) {
         std::cout << "Усі цифри числа "<< number <<" є парними." << std::endl;
     } else {
         std::cout << "Хоча б одна цифра числа "<< number <<" є непарною." << std::endl;

@@ -3,23 +3,21 @@
 #include <iostream>
 #include <cmath>
 
-using namespace std;
-
 int main() {
     double number;
-    int exponent;
+    int power;
 
-    cout << "Введіть число: ";
-    cin >> number;
+    std::cout << "Введіть число: ";
+    std::cin >> number;
 
-    cout << "Виберіть степінь (2, 3, 4 або 5): ";
-    cin >> exponent;
+    std::cout << "Виберіть степінь (2, 3, 4 або 5): ";
+    std::cin >> power;
 
-    if (exponent == 2 || exponent == 3 || exponent == 4 || exponent == 5) {
-        double result = pow(number, exponent);
-        cout << "Результат: " << result << endl;
+    if (power == 2 || power == 3 || power == 4 || power == 5) {
+        double result = pow(number, power);
+        std::cout << "Результат: " << result << std::endl;
     } else {
-        cout << "Помилка: введено неправильний степінь!" << endl;
+        std::cout << "Помилка: введено неправильний степінь!" << std::endl;
     }
 
     return 0;

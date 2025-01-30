@@ -13,18 +13,18 @@ int main() {
         return 1;
     }
 
-    bool hasOddDigit = false;
+    bool has_odd_digit = false;
 
     while (number > 0) {
         int digit = number % 10;  
         if (digit % 2 != 0) { 
-            hasOddDigit = true;
+            has_odd_digit = true;
             break;
         }
         number /= 10; 
     }
 
-    if (hasOddDigit) {
+    if (has_odd_digit) {
         std::cout << "Число має хоча б одну непарну цифру." << std::endl;
     } else {
         std::cout << "Число не має непарних цифр." << std::endl;

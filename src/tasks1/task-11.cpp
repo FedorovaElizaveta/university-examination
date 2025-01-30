@@ -13,19 +13,19 @@ int main() {
         return 1;
     }
 
-    int evenCount = 0;
+    int even_count = 0;
    
     for (int i = 0; i < 4; ++i) {
         int digit = number % 10;
 
         if (digit % 2 == 0) {    
-            ++evenCount;
+            ++even_count;
         }
 
         number /= 10;
     }
 
-    std::cout << "Кількість парних цифр у числі: "<< evenCount <<"." << std::endl;
+    std::cout << "Кількість парних цифр у числі: "<< even_count <<"." << std::endl;
 
     return 0;
 }

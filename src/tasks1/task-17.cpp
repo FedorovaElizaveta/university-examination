@@ -13,10 +13,10 @@ int main() {
         return 1;
     }
 
-    int firstDigit = number / 1000;
-    int lastDigit = number % 10;
+    int first_digit = number / 1000;
+    int last_digit = number % 10;
 
-    int sum = firstDigit + lastDigit;
+    int sum = first_digit + last_digit;
 
     if (sum > 9 && sum < 100) {
         std::cout << "Сума першої та останньої цифр числа "<< number <<" є двоцифровим числом." << std::endl;

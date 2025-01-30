@@ -18,9 +18,9 @@ int main() {
     int digit3 = (number / 10) % 10;
     int digit4 = number % 10;
 
-    bool isEqual = (digit1 == digit2) && (digit2 == digit3) && (digit3 == digit4);
+    bool is_equal = (digit1 == digit2) && (digit2 == digit3) && (digit3 == digit4);
 
-    if (isEqual) {
+    if (is_equal) {
         std::cout << "Усі цифри числа "<< number <<" є однаковими." << std::endl;
     } else {
         std::cout << "Не усі цифри цифра числа "<< number <<" є однаковими." << std::endl;

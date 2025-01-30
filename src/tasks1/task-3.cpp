@@ -15,16 +15,16 @@ int main() {
         return 1;
     }
 
-    int firstDigit1 = num1 / 10; 
-    int secondDigit1 = num1 % 10;
+    int first_digit1 = num1 / 10; 
+    int second_digit1 = num1 % 10;
 
-    int firstDigit2 = num2 / 10; 
-    int secondDigit2 = num2 % 10;
+    int first_digit2 = num2 / 10; 
+    int second_digit2 = num2 % 10;
 
-    bool isIncreasing = (firstDigit1 < secondDigit1);
-    bool isDecreasing = (firstDigit2 > secondDigit2);
+    bool is_increasing = (first_digit1 < second_digit1);
+    bool is_decreasing = (first_digit2 > second_digit2);
 
-    if (isIncreasing && isDecreasing) {
+    if (is_increasing && is_decreasing) {
         std::cout << "Цифри в першому числі впорядковані за зростанням, а в другому - за спаданням." << std::endl;
     } else {
         std::cout << "Цифри не задовольняють задані умови." << std::endl;

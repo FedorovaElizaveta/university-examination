@@ -3,28 +3,28 @@
 #include <iostream>
 
 int main() {
-    int firsNumber, secondNumber;
+    int firs_number, second_number;
 
     std::cout << "Введіть перше двоцифрове число: ";
-    std::cin >> firsNumber;
+    std::cin >> firs_number;
     std::cout << "Введіть друге двоцифрове число: ";
-    std::cin >> secondNumber;
+    std::cin >> second_number;
 
-    if (firsNumber < 10 || firsNumber > 99 || secondNumber < 10 || secondNumber > 99) {
+    if (firs_number < 10 || firs_number > 99 || second_number < 10 || second_number > 99) {
         std::cout << "Помилка: введене число не є двоцифровим." << std::endl;
         return 1;
     }
 
-    int firstDigit1 = firsNumber / 10;
-    int secondDigit1 = firsNumber % 10;
+    int first_digit1 = firs_number / 10;
+    int second_digit1 = firs_number % 10;
 
-    int firstDigit2 = secondNumber / 10;
-    int secondDigit2 = secondNumber % 10;
+    int first_digit2 = second_number / 10;
+    int second_digit2 = second_number % 10;
 
-    if (firstDigit1 > firstDigit2 && secondDigit1 > secondDigit2) {
-        std::cout << "Всі цифри першого числа ("<< firsNumber <<") більші за відповідні цифри другого числа ("<< secondNumber <<")." << std::endl;
+    if (first_digit1 > first_digit2 && second_digit1 > second_digit2) {
+        std::cout << "Всі цифри першого числа ("<< firs_number <<") більші за відповідні цифри другого числа ("<< second_number <<")." << std::endl;
     } else {
-        std::cout << "Не всі цифри першого числа ("<< firsNumber <<") більші за відповідні цифри другого числа ("<< secondNumber <<")." << std::endl;
+        std::cout << "Не всі цифри першого числа ("<< firs_number <<") більші за відповідні цифри другого числа ("<< second_number <<")." << std::endl;
     }
 
     return 0;

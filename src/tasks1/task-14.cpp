@@ -20,9 +20,9 @@ int main() {
 
     int product = digit1 * digit2 * digit3 * digit4;
 
-    bool isEven = product % 2 == 0;
+    bool is_even = product % 2 == 0;
 
-    if (isEven) {
+    if (is_even) {
         std::cout << "Добуток цифр числа "<< number <<" ("<< product <<") є парним числом." << std::endl;
     } else {
         std::cout << "Добуток цифр числа "<< number <<" ("<< product <<") не є парним числом." << std::endl;

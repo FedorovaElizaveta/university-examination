@@ -13,12 +13,12 @@ int main() {
         return 1;
     }
 
-    int firstDigit = number / 1000;
-    int thirdDigit = (number / 10) % 10;
+    int first_digit = number / 1000;
+    int third_digit = (number / 10) % 10;
 
-    if (firstDigit > thirdDigit) {
+    if (first_digit > third_digit) {
         std::cout << "Перша цифра числа "<< number <<" більша за третю цифру." << std::endl;
-    } else if (firstDigit < thirdDigit) {
+    } else if (first_digit < third_digit) {
         std::cout << "Перша цифра числа "<< number <<" меньша за третю цифру." << std::endl;
     } else {
         std::cout << "Перша цифра числа "<< number <<" рівна третій цифрі." << std::endl;
